@@ -1,0 +1,71 @@
+--- Summary Statistics
+
+-- Mean, min, and max approval/disapproval
+SELECT AVG(Approving) AS avg_approval, 
+AVG(Disapproving) AS avg_disapproval,
+MIN(Approving) AS min_approval,
+MAX(Approving) AS max_approval,
+MIN(Disapproving) AS min_disapproval,
+MAX(Disapproving) AS max_disapproval
+FROM workspace.default.approval
+;
+
+
+-- Mean approval/disapproval by party
+SELECT party, AVG(Approving) AS avg_approval, 
+AVG(Disapproving) AS avg_disapproval
+FROM workspace.default.approval
+GROUP BY party;
+
+-- Mean approval/disapproval by year
+SELECT YEAR(date) as YEAR, AVG(Approving) AS avg_approval, AVG(Disapproving) AS avg_disapproval
+FROM workspace.default.approval
+GROUP BY year
+ORDER BY year
+;
+
+-- Mean approval/disapproval by year by party
+SELECT party, YEAR(date) as year, AVG(Approving) AS avg_approval, AVG(Disapproving) AS avg_disapproval
+FROM workspace.default.approval
+GROUP BY party, year
+ORDER BY party, year
+;
+
+
+--- Summary Statistics (2009 onward)
+
+-- Mean, min, and max approval/disapproval
+SELECT AVG(Approving) AS avg_approval, 
+AVG(Disapproving) AS avg_disapproval,
+MIN(Approving) AS min_approval,
+MAX(Approving) AS max_approval,
+MIN(Disapproving) AS min_disapproval,
+MAX(Disapproving) AS max_disapproval
+FROM workspace.default.approval
+WHERE (date > '2009-01-01')
+;
+
+
+-- Mean approval/disapproval by party
+SELECT party, AVG(Approving) AS avg_approval, 
+AVG(Disapproving) AS avg_disapproval
+FROM workspace.default.approval
+WHERE (date > '2009-01-01')
+GROUP BY party;
+
+-- Mean approval/disapproval by year
+SELECT YEAR(date) as YEAR, AVG(Approving) AS avg_approval, AVG(Disapproving) AS avg_disapproval
+FROM workspace.default.approval
+WHERE (date > '2009-01-01')
+GROUP BY year
+ORDER BY year
+;
+
+-- Mean approval/disapproval by year by party
+SELECT party, YEAR(date) as year, AVG(Approving) AS avg_approval, AVG(Disapproving) AS avg_disapproval
+FROM workspace.default.approval
+WHERE (date > '2009-01-01')
+GROUP BY party, year
+ORDER BY party, year
+;
+
