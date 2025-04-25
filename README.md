@@ -19,4 +19,7 @@ The blueprint for the ML pipeline (*sentiment_approval_pipeline*)
 ## Dashboard
 A snapshot of data visualizations created using databricks (*sentiment_dashboard*)
 
+## SQL
+A text file contains some of the SQL queries we used for EDA and summary/descriptive statistics (*sql_summary_stats*)
+
 
