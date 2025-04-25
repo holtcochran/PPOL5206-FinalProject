@@ -7,6 +7,7 @@ Contains notebooks used to ingest, clean, and merge reddit comment and president
 - (1) Ingestion of reddit comment data (*01_ingest_to_bronze*);
 - (2) Cleaning, merging with approval rating data, and getting comment sentiment (*02_sentiment_and_approval*); and
 - (3) Dashboard creation and visualization (*03_sentiment_vs_approval*
+
 This folder as contains the script which scrapes the American Presidency Project website for weekly approval rating data. This can be found within the "*approval_rating*" sub-folder.
 
 ## Scripts
