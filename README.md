@@ -24,7 +24,7 @@ A snapshot of data visualizations created using databricks (*sentiment_dashboard
 A text file containing some of the SQL queries we used for EDA and summary/descriptive statistics (*sql_summary_stats*)
 
 ---
-## Other Items
+## Other Items:
 ### Report 
 A reporting detailing our motiviation, data, methodology, results, and analysis can be found in the *Report* folder. A PDF and Word version of the report are available
 
