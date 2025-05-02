@@ -1,6 +1,6 @@
 # PPOL5206-FinalProject
 #### *By  Daniel Cardenas, Holt Cochran, Sam Cohen, Vaishnavi Singh, and Gabriel Soto* ####
-This repository includes scripts and notebooks used in our final project for Massive Data Fundamentals (PPOL 5206). For this project, we used reddit comment sentiment data to predict presidential approval rating using XGBoost. This repository (found in the "approval" folder) is structured as follows:
+This repository includes scripts and notebooks used in our final project for Massive Data Fundamentals (PPOL 5206). For this project, we used reddit comment sentiment data to predict presidential approval rating using XGBoost. This repository (most of which can be found in the "approval" folder) is structured as follows:
 
 ## Notebooks
 Contains notebooks used to ingest, clean, and merge reddit comment and presidential approval rating. The scripts follow a standard "medallion" approach: 
@@ -23,4 +23,5 @@ A snapshot of data visualizations created using databricks (*sentiment_dashboard
 #### SQL
 A text file containing some of the SQL queries we used for EDA and summary/descriptive statistics (*sql_summary_stats*)
 
-
+## Report 
+A succint reporting detailing our motiviation, data, methodology, results, and analysis can be found in the *Report* folder. A PDF and Word version of the report are available. 
