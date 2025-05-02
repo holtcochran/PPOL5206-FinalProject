@@ -8,12 +8,12 @@ Contains notebooks used to ingest, clean, and merge reddit comment and president
 - (2) Cleaning, merging with approval rating data, and getting comment sentiment (*02_sentiment_and_approval*); and
 - (3) Dashboard creation and visualization (*03_sentiment_vs_approval*)
 
-This folder as contains the script which scrapes the American Presidency Project website for weekly approval rating data. This can be found within the "*approval_rating*" sub-folder.
+This folder as contains the script which scrapes the American Presidency Project website for weekly approval rating data. This can be found within the "*approval_rating*" sub-folder
 
 ## Scripts
 Contains the reddit API script which pulls daily comments with specified parameters
 
-## Other
+## Misc. 
 #### Pipeline
 The blueprint for the ML pipeline (*sentiment_approval_pipeline*)
 
@@ -23,5 +23,10 @@ A snapshot of data visualizations created using databricks (*sentiment_dashboard
 #### SQL
 A text file containing some of the SQL queries we used for EDA and summary/descriptive statistics (*sql_summary_stats*)
 
-## Report 
-A succint reporting detailing our motiviation, data, methodology, results, and analysis can be found in the *Report* folder. A PDF and Word version of the report are available. 
+---
+## Other
+### Report 
+A reporting detailing our motiviation, data, methodology, results, and analysis can be found in the *Report* folder. A PDF and Word version of the report are available
+
+### Website
+A GitHub pages website showing a succint and readable overview of our project can be found [here](https://sec178.github.io/ppol5206_presapproval.github.io/)
