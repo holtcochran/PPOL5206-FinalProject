@@ -30,3 +30,6 @@ A reporting detailing our motiviation, data, methodology, results, and analysis 
 
 ### Website
 A GitHub pages website showing a succint and readable overview of our project can be found [here](https://sec178.github.io/ppol5206_presapproval.github.io/)
+
+### Data
+A sample version of the posts and comments from Reddit, to illustrate the structure, is [available](approval/data).
